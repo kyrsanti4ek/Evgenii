@@ -3,26 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>OurApp-Main Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
   </head>
 
 
+
   <body>
-     	
-<!--img src="pict/sun.jpg" alt="sunny" class="sun" /-->
+    <div id="test">
 
 
-<img class="sunny" src="pict/sun.jpg"  width="180" height="200">
-<img class="cloud" src="pict/cloud.png"  width="165" height="185">
 
-<div id="center">
-  OurApp is the best helper for you! <br>
-  blb bla
-</div>
-    
+    <div id="center">
+      OurApp is the best helper for you! <br>
+      blb bla
+
+      <p class="dev">
+      <img  src="pict/developer.png"  width="265" height="285">
+      </p>
+
+    </div>
 
 
-    <script src="js.js">  </script>
+<p>
+    X-coordinate: <span id="offx"></span>
+    Y-coordinate: <span id="offy"></span>
+</p>
+
+ </div>
+
+    <script>
+
+  document.querySelector('#test').onmousemove = function(event){
+    event = event || window.event;
+    document.querySelector('#offx').innerHTML = event.offsetX;
+    document.querySelector('#offy').innerHTML = event.offsetY;
+  }
+
+
+
+    </script>
+
+
 
   </body>
 
