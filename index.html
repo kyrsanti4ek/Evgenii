@@ -20,16 +20,15 @@
       <p class="dev">
       <img  src="pict/developer.png"  width="265" height="285">
       </p>
-
     </div>
 
 
-<p>
-    X-coordinate: <span id="offx"></span>
-    Y-coordinate: <span id="offy"></span>
-</p>
-
  </div>
+
+ <p>
+     X-coordinate: <span id="offx"></span>
+     Y-coordinate: <span id="offy"></span>
+ </p>
 
     <script>
 
@@ -37,6 +36,14 @@
     event = event || window.event;
     document.querySelector('#offx').innerHTML = event.offsetX;
     document.querySelector('#offy').innerHTML = event.offsetY;
+  }
+
+  var left = 556;
+  document.getElementById('test').offsetX = function (event){
+    var xuj = event.offsetX;
+    left += xuj;
+    document.getElementsByClassName('dev').style.left = left + 'px';
+    return false;
   }
 
 
