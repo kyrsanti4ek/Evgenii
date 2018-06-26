@@ -1,7 +1,28 @@
+/*.dev{
+	display: block;
+  margin: 2 auto;
+}*/
+
 #center{
     width: 100%;
-    height: 100%;
+    height: 300px;
     background: rgb(219, 236, 220);
-    position: relative;  
-  
+    position: -webkit-flex-direction: ;
+    -ms-flex-direction: ;
+    flex-direction: ;
+    padding: 10px;
+}
+
+
+.dev{
+	text-align: center;
+}
+
+.changeDevToRight{
+
+}
+
+#test{
+	width: 100%;
+	height: 1000px; /* по высоте страницы*/
 }
