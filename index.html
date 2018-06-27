@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>OurApp-Main Page</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 
 
@@ -11,17 +11,16 @@
   <body>
     <div id="test">
 
-
-
     <div id="center">
       OurApp is the best helper for you! <br>
       blb bla
 
-      <p class="dev">
+      <div id="dev">
       <img  src="pict/developer.png"  width="265" height="285">
       </p>
     </div>
 
+    </div>
 
  </div>
 
@@ -32,18 +31,25 @@
 
     <script>
 
-  document.querySelector('#test').onmousemove = function(event){
+    document.querySelector('#test').onmousemove = function(event){
     event = event || window.event;
     document.querySelector('#offx').innerHTML = event.offsetX;
     document.querySelector('#offy').innerHTML = event.offsetY;
   }
 
   var left = 556;
-  document.getElementById('test').offsetX = function (event){
-    var xuj = event.offsetX;
-    left += xuj;
-    document.getElementsByClassName('dev').style.left = left + 'px';
-    return false;
+  var top = 45;
+  document.getElementById('center').onmousemove = function (event){
+    
+    var X = event.offsetX;
+    var Y = event.offsetY;
+    
+    left = left + X;
+    top = top + Y;
+    
+      //document.getElementById('dev').style.left = left + 'px';
+      document.getElementById('dev').style.top = top + 'px';
+    
   }
 
 

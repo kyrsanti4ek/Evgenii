@@ -10,11 +10,11 @@
 #center{
     width: 100%;
     height: 350px;
-    background: rgb(219, 236, 220);
+    background: rgb(192, 228, 195);
     position: relative;
 }
 
-.dev{
+#dev{
 
 position: absolute;
 top: 45px;
@@ -23,5 +23,5 @@ left: 556px;
 
 #test{
 	width: 100%;
-	height: 1000px; /* по высоте страницы*/
+	height: 800px; /* по высоте страницы*/
 }
