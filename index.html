@@ -42,13 +42,46 @@
   document.getElementById('center').onmousemove = function (event){
     
     var X = event.offsetX;
-    var Y = event.offsetY;
+    //var Y = event.offsetY;
+    var i = 5;
+    var j = 5;
+    switch (true){
+      
+      case (X = (X + i)):      
+      left+=2;
+      i++;
+      break;
+
+      case (X = (X - j)):      
+      left-=2;
+      j--;
+      break;
+
+
+        default:
+      left = left;
+
+    }
+
+     /* case (X>800 && X <1000):      
+      left+=15;
+      break;
+
+      case (X>1000 && X<1260):      
+      left+=20;
+      break;
+
+      default:
+      left = left;
+      
+    }*/
+     //left = left + X;
+     //top = top + Y;
+
+     
     
-    left = left + X;
-    top = top + Y;
-    
-      //document.getElementById('dev').style.left = left + 'px';
-      document.getElementById('dev').style.top = top + 'px';
+      document.getElementById('dev').style.left = left + 'px';
+     // document.getElementById('dev').style.top = top + 'px';
     
   }
 
